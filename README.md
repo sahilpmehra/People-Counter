@@ -1,22 +1,20 @@
 # People-Counter
-This program count incoming and outcoming people, who crooss by hall. 
-  I find many examples in video, how count people who crossing hall or doors, but didn`t find examples code. I decided
-write little program, which been counting incoming and outcoming people.
-  I use OpenCV and Python 2.7
+This program counts incoming and outcoming people, who cross the hall. 
+  I found many video tutorials on how to count the inflow and outflow of people but couldn't find any code examples sp, I decided to write a little program which does so.
+  I used OpenCV and Python 2.7
   So, begining you need install all dependensies:
    #pip install datetime
    #pip install imutils
    #pip install opencv-python
-   Use "import" for importing this library in project
    
    For running program write in command line 
    #python PeopleCounterMain.py
    
-   If you want chenge video or set stream from rtsp camera change line
-   camera = cv2.VideoCapture("test2.mp4") # set here your video
+   If you want to change the video or set stream from rtsp camera, change line
+   camera = cv2.VideoCapture("test2.mp4") 
    
-   This example use mechanism computer the absolute difference between the current frame and
-   first frame, so I compare two frame and if chenges exist i find where. If area bigest more than 
- 1200 I draw rectange around object which been chenged, if less than contour is too small, ignore it.
+   This example uses mechanism computer the absolute difference between the current frame and
+   previous frame, so I compare two frame and if changes exist i find where. If biggest area is more than 
+   12000, I draw rectange around object which has been changed, if less then contour is too small, ignore it.
 
   
